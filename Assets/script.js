@@ -59,6 +59,7 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", startPassword)
 
+
 //Made functions for each special character
 
 function getRandomLower() {
