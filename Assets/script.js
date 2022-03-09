@@ -18,9 +18,9 @@ const lowerAlphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l
 
 const upperAlphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
-let numberChoices = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+const numberChoices = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
-let specialCharacters = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "+", "-", ".", "`", "~", "|", "<", ">", "=", "-", "_"]
+const specialCharacters = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "+", "-", ".", "`", "~", "|", "<", ">", "=", "_"]
 
 var yourPassword = {
   length: 0,
@@ -36,8 +36,14 @@ function getRandomLower() {
 function getRandomUpper() {
   return upperAlphabet[Math.floor(Math.random(upperAlphabet) * 26)];
 }
+function getRandomCharacter() {
+  return specialCharacters[Math.floor(Math.random(specialCharacters) * 20)];
+}
+function getRandomNumber() {
+  return numberChoices[Math.floor(Math.random(numberChoices) * 10)];
+}
 
-console.log(getRandomUpper());
+console.log(getRandomCharacter());
 
 getRandomLower()
 
