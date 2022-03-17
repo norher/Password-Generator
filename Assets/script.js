@@ -48,7 +48,7 @@ function generatePassword() {
   var pwLength = +prompt('How long would you like your password to be?\n Please choose a number between 8 and 128')
   console.log(pwLength, typeof possiblePassword);
 
-  let yourPassword = [];
+  let yourPassword = '';
   for (var i = 0; i < pwLength; i++) {
      yourPassword = yourPassword.concat(possiblePassword[Math.floor(Math.random() * possiblePassword.length)]);
   }
